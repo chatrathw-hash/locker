@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 40px 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+    width: 420px;
+    max-width: 95%;
+    max-height: 90vh;
+    overflow-y: auto; /* เลื่อนได้ถ้าฟอร์มยาว */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4e73df;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+form label {
+    display: block;
+    margin: 16px 0 8px;
+    color: #444;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+form input {
+    width: 100%;
+    padding: 13px 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #4e73df;
+    box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.15);
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #4e73df;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    color: #4e73df;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive สำหรับมือถือ */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 25px;
+        width: 100%;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+}

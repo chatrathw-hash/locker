@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap');
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    background: linear-gradient(135deg, #f0f7ff 0%, #d0e8ff 100%);
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    color: #1976d2;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.alert.success {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #a5d6a7;
+}
+
+.lockers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.locker-card {
+    background: white;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    transition: all 0.4s ease;
+    border: 5px solid;
+}
+
+.locker-card:hover {
+    transform: translateY(-10px);
+}
+
+.locker-card.available { border-color: #4caf50; }
+.locker-card.occupied { border-color: #f44336; }
+
+.locker-number {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.locker-status {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 25px;
+    min-height: 140px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-manage {
+    flex: 1;
+    padding: 14px;
+    background: #2196f3;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.btn-manage:hover { background: #1976d2; }
+
+.btn-force {
+    flex: 1;
+    padding: 14px;
+    background: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.btn-force:hover { background: #e64a19; }
+
+.back-link a {
+    color: #2196f3;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.back-link a:hover { text-decoration: underline; }
+
+@media (max-width: 768px) {
+    .actions { flex-direction: column; }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <h2>สมัครสมาชิก</h2>
+        <form action="register.php" method="post">
+            <label for="name">ชื่อ-นามสกุล</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="user_id">ชื่อผู้ใช้ (ID)</label>
+            <input type="text" id="user_id" name="user_id" required>
+            
+            <label for="phone">เบอร์โทรศัพท์</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="email">อีเมล</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">รหัสผ่าน</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="confirm_password">ยืนยันรหัสผ่าน</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+            
+            <button type="submit">สมัครสมาชิก</button>
+        </form>
+        <a href="login.html">มีบัญชีแล้ว? เข้าสู่ระบบ</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 45px 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    width: 450px;
+    max-width: 95%;
+}
+
+h2 {
+    text-align: center;
+    color: #2e7d32;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+p.welcome {
+    text-align: center;
+    color: #33691e;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+form label {
+    display: block;
+    margin: 18px 0 8px;
+    color: #33691e;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #a5d6a7;
+    border-radius: 12px;
+    font-size: 16px;
+    background: #f1fdf2;
+    transition: all 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+    background: white;
+    box-shadow: 0 0 0 5px rgba(76, 175, 80, 0.2);
+}
+
+form input:disabled {
+    background: #e0e0e0;
+    color: #666;
+    cursor: not-allowed;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.required {
+    color: #d32f2f;
+}
+
+hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px dashed #a5d6a7;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+button:hover {
+    background: #43a047;
+    transform: translateY(-2px);
+}
+
+.alert {
+    padding: 12px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+.alert.success { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
+.alert.error   { background: #ffebee; color: #c62828; border: 1px solid #ef9a9a; }
+
+.links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.links a {
+    display: block;
+    margin: 10px 0;
+    color: #4caf50;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.links a.logout {
+    color: #d32f2f;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 35px 25px;
+    }
+}

@@ -1,0 +1,157 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Sarabun', sans-serif;
+    background: linear-gradient(135deg, #f0f7ff 0%, #d0e8ff 100%);
+    padding: 30px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h2 {
+    text-align: center;
+    color: #1976d2;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* Search Box */
+.search-box {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-box input {
+    padding: 12px;
+    width: 300px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    background: #2196f3;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.clear-search {
+    margin-left: 10px;
+    color: #d32f2f;
+    text-decoration: none;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 24px;
+    text-align: left;
+    border-bottom: 1px solid #eeeeee;
+}
+
+th {
+    background: #f5f7fa;
+    color: #333333;
+}
+
+/* Status */
+.status.active {
+    color: #06d510;
+    font-weight: bold;
+}
+
+.status.inactive {
+    color: #d32f2f;
+}
+
+/* Buttons */
+.btn-edit {
+    background: #007bff;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn-edit:hover {
+    background: #f57c00;
+}
+
+/* Back Link */
+.back-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back-link a {
+       background: #007bff;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #fcfcfc;
+    text-decoration: none;
+     }
+        .back-link a:hover {
+            background-color: #0056b3;
+        }
+    
+
+  /* เพิ่มสไตล์ปุ่มเปิด locker */
+        .btn-open {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-left: 8px;
+            background-color: #d11818;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .btn-open:hover {
+            background-color: #882121;
+        }
+        .btn-edit:hover {
+            background-color: #0056b3;
+        }
+    .clear-search {
+          display: inline-block;
+            padding: 9px 12px;
+            margin-left: 8px;
+            background-color: #d11818;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+    }
+    .clear-search:hover {
+        background-color: #882121;
+    }
